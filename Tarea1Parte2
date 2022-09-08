@@ -1,0 +1,18 @@
+public class Tarea1Parte2{
+    
+    public static void main(String[] args){
+        Coche miCoche = new Coche(); //creo un obxecto, que ten unhas propiedades (un número de portas) e unha función (AñadirPuerta)
+        miCoche.AñadirPuerta();
+    
+        System.out.println(miCoche.puertas); //mostra o número de portas que ten o coche
+    }
+   
+}
+
+class Coche {  //creamos clase Coche
+    public int puertas = 4; //variable numérica que almacena o número de portas
+
+    public void AñadirPuerta(){ //función que incrementa o número de portas
+        this.puertas++;
+    }
+}
